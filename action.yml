@@ -1,0 +1,19 @@
+name: bifrostsec
+description: Integrate with bifrost
+author: bifrost security
+inputs:
+  api-token:
+    description: API Token
+    required: true
+  service-name:
+    description: Service Name
+    required: true
+  service-version:
+    description: Service Version
+    required: true
+outputs:
+  profile-name:
+    description: Name of the generated profile
+runs:
+  using: node20
+  main: dist/index.js
